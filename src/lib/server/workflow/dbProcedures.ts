@@ -70,6 +70,10 @@ export async function notifyAutoPublishOwner(productId: string) {
     }
   });
   if (!product?.Project.OwnerId) return;
+  console.log('[Workflow] Queueing auto publish notification for owner', {
+    productId,
+    projectName: product.Project.Name
+  });
   await getQueues().Emails.add(`Notify Owner of Auto Publish for Product #${productId}`, {
     type: BullMQ.JobType.Email_SendNotificationToUser,
     userId: product.Project.OwnerId,
