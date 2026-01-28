@@ -297,9 +297,9 @@ This is placeholder content to demonstrate layout only.`
                 Captcha widget placeholder (Turnstile)
               </div>
             </div>
-            <button class="btn btn-primary w-full text-white no-animation" type="button">
+            <a class="btn btn-primary w-full text-white no-animation" type="button" href="/mock/emailcode">
               Send verification code
-            </button>
+            </a>
           </div>
         </div>
       </div>
