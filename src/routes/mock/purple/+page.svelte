@@ -154,7 +154,7 @@
   <div class="max-w-xl mx-auto bg-white min-h-screen">
     <div
       class="px-5 pt-5 pb-3 flex items-start gap-3"
-      style="padding-top: calc(2rem + env(safe-area-inset-top));"
+      style="padding-top: calc(1rem + env(safe-area-inset-top));"
     >
       <div class="flex flex-col">
         <h1 class="text-2xl font-bold tracking-tight">Manage my data</h1>
@@ -178,7 +178,6 @@
       </div>
     </div>
 
-<<<<<<< HEAD
     <div class="px-5">
       <a class="btn btn-ghost btn-sm border border-base-300 mb-4 w-full justify-center" href="./about">
         About this app
@@ -193,75 +192,6 @@
             <p class="text-xs opacity-60 mt-1 leading-relaxed">
               Enter your email to request deletion. We’ll email a 6-digit code to confirm it’s you.
             </p>
-=======
-        <div class="card bg-base-100 shadow-sm border border-base-300 rounded-lg h-fit min-w-0">
-          <div class="card-body p-5 space-y-4 break-words">
-            <div>
-              <h2 class="card-title text-lg font-bold">Manage my data</h2>
-              <p class="text-xs opacity-60 mt-1 leading-relaxed">
-                Enter your email to request deletion. We’ll email a 6-digit code to confirm it’s you.
-              </p>
-            </div>
-            <div class="form-control w-full">
-              <label class="label pb-1 pt-0">
-                <span class="label-text text-xs font-bold opacity-50 uppercase tracking-wide">Email</span>
-              </label>
-              <input 
-                type="email" 
-                placeholder="you@example.com" 
-                class="input input-bordered w-full text-sm h-11 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none" 
-                name="email" 
-              />
-              <label class="label pt-1 pb-0">
-                <span class="label-text-alt text-[10px] opacity-60">Use the email associated with your account.</span>
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="label pb-1 pt-0">
-                <span class="label-text text-xs font-bold opacity-50 uppercase tracking-wide">Deletion Scope</span>
-              </label>
-              <div class="flex flex-col gap-3 mt-1">
-                <label class="label cursor-pointer items-start justify-start gap-3 p-0 group">
-                  <input type="radio" name="deletionType" class="radio radio-primary radio-sm mt-1" checked />
-                  <div>
-                    <span class="label-text font-bold text-sm group-hover:text-primary transition-colors">Delete my data</span>
-                    <p class="text-xs opacity-60 leading-tight mt-0.5">
-                      Bookmarks, notes, highlights, reading plan progress. Account stays active.
-                    </p>
-                  </div>
-                </label>
-                <label class="label cursor-pointer items-start justify-start gap-3 p-0 group">
-                  <input type="radio" name="deletionType" class="radio radio-primary radio-sm mt-1" />
-                  <div>
-                    <span class="label-text font-bold text-sm group-hover:text-primary transition-colors">Delete my account and data</span>
-                    <p class="text-xs opacity-60 leading-tight mt-0.5">
-                      Removes account plus all associated data.
-                    </p>
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="bg-base-200/60 rounded-lg p-4 border border-base-200">
-              <div class="text-[10px] font-bold mb-2 uppercase tracking-wide opacity-50">Items to be removed</div>
-              <ul class="list-disc list-inside space-y-1 text-xs opacity-60">
-                <li>Bookmarks</li>
-                <li>Notes</li>
-                <li>Highlights</li>
-                <li>Reading plan progress</li>
-              </ul>
-            </div>
-            <div class="form-control">
-              <label class="label pb-1 pt-0">
-                <span class="label-text text-xs font-bold opacity-50 uppercase tracking-wide">Verification</span>
-              </label>
-              <div class="rounded-btn border border-base-300 bg-base-200/30 h-14 flex items-center justify-center text-xs opacity-50">
-                Captcha widget placeholder (Turnstile)
-              </div>
-            </div>
-            <a class="btn btn-primary w-full text-white no-animation" type="button" href="/mock/emailcode">
-              Send verification code
-            </a>
->>>>>>> 1a296b41b5a623b3e60e818a3bb30671502fa380
           </div>
 
           <div class="form-control w-full">
