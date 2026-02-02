@@ -23,7 +23,7 @@
 {#key getLocale()}
   <Dropdown
     dropdownClasses="dropdown-end"
-    labelClasses="m-2 p-2 rounded-xl items-middle justify-center flex-nowrap"
+    labelClasses="m-2 p-2 rounded-xl items-middle justify-center flex-nowrap bg-primary text-primary-content shadow"
     contentClasses="overflow-y-auto min-w-52"
   >
     {#snippet label()}
@@ -45,7 +45,7 @@
             >
               <IconContainer icon="circle-flags:{getFlag(locale)}" width="24" />
               <span class="grow text-left">
-                {langMap?.get(locale) ?? langMap?.get(locale.split('-')[0])}
+                {langMap?.get(locale) ?? langMap?.get(locale.split('-')[0]) ?? locale}
               </span>
             </div>
           </li>
